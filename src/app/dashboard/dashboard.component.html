@@ -1,0 +1,13 @@
+<section class="dashboard" fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="row" fxFlex="100" class="pageTitle">
+        Dashboard
+        <mat-icon>logout</mat-icon>
+    </div>
+    <div fxLayout="row" class="input-container">
+        <input type="text" class="custom_input" placeholder="Search..." />
+        <mat-icon>search</mat-icon> <!-- Font Awesome search icon -->
+    </div>
+    <div fxLayout="column" class="dashboardDetails" fxFlex.lg="30">
+        <app-patient-card></app-patient-card>
+    </div>
+</section>

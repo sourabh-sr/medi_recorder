@@ -1,0 +1,23 @@
+<section class="login" fxLayout="row" fxLayoutAlign="center center">
+    <div fxLayout="column" class="signInDetails" fxFlex.lg="30">
+        <div fxLayout="row" class="logo" fxLayoutAlign="center center">
+            <img src="assets/images/Medi_recorder_logo.png" alt="">
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center center" class="logoFont">
+            Medical Recorder
+        </div>
+        <div fxFlex="100" class="usenameInput">
+            <label for="">Username</label>
+            <input class="custom_input" />
+        </div>
+        <div fxFlex="100" class="passwordInput">
+            <div>
+                <label for="">Password</label>
+            </div>
+            <input class="custom_input" />
+        </div>
+        <div fxFlex="100" class="buttonGroup" fxLayoutAlign="end end">
+            <button fxFlex="35" mat-flat-button class="btn_primary" (click)="login()">Sign In</button>
+        </div>
+    </div>
+</section>

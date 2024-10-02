@@ -1,0 +1,55 @@
+<section class="patientDetails" fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="row" fxFlex="100" fxLayoutAlign="start center" class="pageTitle">
+        <mat-icon class="back-icon">arrow_back</mat-icon>
+        <span class="title-text">Patient Details</span>
+    </div>
+    <mat-card fxLayout="column" fxLayoutAlign="center stretch" class="patient-card">
+        <mat-expansion-panel expanded="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Patient Information
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <mat-card fxLayout="column" fxLayoutAlign="center stretch" class="patient-card">
+                <mat-card-title>Name: Anirudha</mat-card-title>
+                <mat-card-subtitle>
+                    <span>Patient ID: XXX</span>
+                    <span class="divider">Age: xx</span>
+                    <span>Gender: Male</span>
+                </mat-card-subtitle>
+                <mat-card-subtitle>Doctor: Dr. S Ashwathama</mat-card-subtitle>
+            </mat-card>
+        </mat-expansion-panel>
+
+        <mat-accordion>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Case Details</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Details about the case...</p>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Medication Details</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Details about the medication...</p>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Visualise Reports</mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Report visualizations...</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <div fxLayout="row" fxLayoutAlign="end center" class="new-report-button">
+            <button mat-fab color="primary">
+                <mat-icon>add</mat-icon>
+            </button>
+            <span>New Reports</span>
+        </div>
+    </mat-card>
+</section>

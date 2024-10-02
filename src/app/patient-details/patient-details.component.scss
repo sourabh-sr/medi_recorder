@@ -1,0 +1,53 @@
+.patientDetails {
+    .pageTitle {
+        background-color: #86BBC0;
+        width: 100%;
+        padding: 15px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+
+        .back-icon {
+            margin-right: 10px;
+            /* Add some spacing between icon and text */
+        }
+
+        .title-text {
+            vertical-align: middle;
+        }
+    }
+
+    .patient-card {
+        // background-color: #e0e0e0;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+
+        .divider {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        mat-card-header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        mat-accordion {
+            width: 100%;
+        }
+
+        .new-report-button {
+            margin-top: 20px;
+
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
