@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component, viewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { PatientCardComponent } from '../patient-card/patient-card.component';
+import { Router } from '@angular/router';
 
 
 
@@ -15,8 +16,17 @@ import { PatientCardComponent } from '../patient-card/patient-card.component';
     CommonModule,
     PatientCardComponent
   ],
+  schemas: [NO_ERRORS_SCHEMA],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DashboardComponent {
-  // accordion = viewChild.required(MatAccordion);
+
+  searchString: any;
+
+  constructor(public router: Router) {
+  }
+  logout() {
+    this.router.navigate(['/login']);
+
+  }
 }

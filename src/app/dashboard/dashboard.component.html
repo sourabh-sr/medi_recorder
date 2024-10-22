@@ -1,13 +1,16 @@
 <section class="dashboard" fxLayout="column" fxLayoutAlign="center center">
     <div fxLayout="row" fxFlex="100" class="pageTitle">
         Dashboard
-        <mat-icon>logout</mat-icon>
+        <mat-icon (click)="logout()">logout</mat-icon>
     </div>
-    <div fxLayout="row" class="input-container">
-        <input type="text" class="custom_input" placeholder="Search..." />
-        <mat-icon>search</mat-icon> <!-- Font Awesome search icon -->
+    <div fxLayout="column" class="dashboard_container">
+        <div fxLayout="row" class="input_container_icon">
+            <input type="text" class="custom_input" placeholder="Search..." [(ngModel)]="searchString" />
+            <mat-icon class="icon">search</mat-icon> <!-- Font Awesome search icon -->
+        </div>
+        <div fxLayout="column" class="dashboardDetails" fxFlex.lg="30">
+            <app-patient-card [searchString]="searchString"></app-patient-card>
+        </div>
     </div>
-    <div fxLayout="column" class="dashboardDetails" fxFlex.lg="30">
-        <app-patient-card></app-patient-card>
-    </div>
+
 </section>

@@ -13,37 +13,15 @@
         }
     }
 
-    .dashboardDetails {
-        width: 100%;
-        padding: 0px 15px 0px 15px;
-
-
-    }
-
-    .input-container {
-        position: relative;
+    .dashboard_container {
+        display: flex;
         width: 100%;
         padding: 15px;
-
-        .custom_input {
-            width: 100%;
-            padding: 10px 20px 10px 40px;
-            font-size: 16px;
-        }
-
-        .custom_input:focus {
-            border-color: #1976d2;
-        }
-
-        mat-icon {
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #ccc;
-            font-size: 24px;
-            pointer-events: none;
-            /* Makes sure the icon is not clickable */
-        }
     }
+
+    .dashboardDetails {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
 }

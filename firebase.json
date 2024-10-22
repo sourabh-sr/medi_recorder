@@ -2,7 +2,6 @@
     "hosting": {
         "site": "medirecord",
         "public": "dist",
-        "source": "**/*.@(png|jpg|jpeg|webp|svg)",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
         "rewrites": [
             {
