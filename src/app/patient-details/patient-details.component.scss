@@ -1,4 +1,10 @@
 .patientDetails {
+    width: 100%;
+
+    .bold {
+        font-weight: 600;
+    }
+
     .pageTitle {
         background-color: #86BBC0;
         width: 100%;
@@ -9,7 +15,6 @@
 
         .back-icon {
             margin-right: 10px;
-            /* Add some spacing between icon and text */
         }
 
         .title-text {
@@ -17,37 +22,64 @@
         }
     }
 
-    .patient-card {
-        // background-color: #e0e0e0;
-        padding: 20px;
-        border-radius: 10px;
+    .parentCardsBody {
         width: 100%;
-        max-width: 400px;
-        margin: 20px auto;
+        padding: 15px 15px 0px;
 
-        .divider {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
+        .card {
+            margin-bottom: 15px;
+            padding: 0px 10px 0px;
 
-        mat-card-header {
-            background-color: #f0f0f0;
-            padding: 10px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        mat-accordion {
-            width: 100%;
-        }
-
-        .new-report-button {
-            margin-top: 20px;
-
-            span {
-                margin-left: 10px;
+            .cardTitle {
+                padding: 10px 15px;
+                font-size: 16px;
+                font-weight: 500;
             }
+
+            .card_body {
+                line-height: 30px;
+            }
+
+
+        }
+
+        .mat-expansion-panel-body {
+            padding: 0 15px !important;
         }
     }
 
+    .reportsBtnContainer {
+        width: 100%;
+        padding: 0px 15px 15px;
+
+        .btn_primary {
+            width: 100%;
+        }
+    }
+
+    .new_report_button {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        padding: 15px;
+        font-weight: 500;
+
+        .btn_primary {
+            background-color: #de8628 !important;
+            border-color: #de8628 !important;
+            border-radius: 35px !important;
+            width: 20%;
+            height: 65px !important;
+        }
+
+        .extentedBtn {
+            background-color: #de8628 !important;
+            color: white;
+            padding: 10px;
+            margin-left: -10px;
+            border-radius: 8px !important;
+        }
+
+    }
 }

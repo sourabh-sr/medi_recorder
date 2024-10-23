@@ -8,6 +8,10 @@
     position: relative;
     line-height: 24px;
 
+    .bold {
+        font-weight: 500;
+    }
+
     mat-icon {
         position: absolute;
         right: 10px;

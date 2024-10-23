@@ -11,7 +11,7 @@ export const routes: Routes = [
         loadComponent: () => import('./dashboard/dashboard.component').then((x) => x.DashboardComponent)
     },
     {
-        path: 'patient-details',
+        path: 'patient-details/:patientId',
         loadComponent: () => import('./patient-details/patient-details.component').then((x) => x.PatientDetailsComponent)
     },
     {

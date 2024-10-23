@@ -1,7 +1,7 @@
 <div *ngFor="let patient of patientsList | searchStringPipe: searchString; let i =index" class="order-card"
-    (click)="openPatientDetails()">
-    <div>Room No. {{patient?.room_no}}</div>
-    <div>Patient Name:
+    (click)="openPatientDetails(patient?.patient_id)">
+    <div><span class="bold">Room No. </span>{{patient?.room_no}}</div>
+    <div><span class="bold">Patient Name: </span>
         @if (patient?.patient_gender == 'male'){
         <span>Mr. </span>
         } @else {
@@ -10,8 +10,8 @@
         <span>{{patient?.patient_firstname}} </span>
         <span>{{patient?.patient_lastname}}</span>
     </div>
-    <div>Patient Id: {{patient?.patient_id}}</div>
-    <div>Age: {{patient?.patient_age}}</div>
-    <div>Doctor Name: {{patient?.doctor_name}}</div>
+    <div><span class="bold">Patient Id: </span>{{patient?.patient_id}}</div>
+    <div><span class="bold">Age: </span>{{patient?.patient_age}}</div>
+    <div><span class="bold">Doctor Name: </span>{{patient?.doctor_name}}</div>
     <mat-icon>open_in_new</mat-icon>
 </div>
