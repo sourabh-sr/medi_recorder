@@ -1,0 +1,18 @@
+<section class="patientDetails" fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="row" fxLayoutAlign="start center" class="pageTitle">
+        <mat-icon class="back-icon"
+            [routerLink]="['/patient-details', patientDetails?.patient_id]">arrow_back</mat-icon>
+        <span class="title-text">Reports of
+            @if (patientDetails?.patient_gender == 'male'){
+            <span>Mr. </span>
+            } @else {
+            <span>Mrs.</span>
+            }
+            <span>{{patientDetails?.patient_firstname}} </span>
+            <span>{{patientDetails?.patient_lastname}}</span>
+        </span>
+    </div>
+    <div style="font-size: 22px; color: red;">
+        Coming Soon....
+    </div>
+</section>

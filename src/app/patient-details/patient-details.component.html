@@ -46,13 +46,15 @@
     </mat-card>
 
     <div fxLayout="row" fxLayoutAlign="center center" class="reportsBtnContainer">
-        <button fxFlex="100" class="btn_primary" (click)="navigateToReports()">View Reports</button>
+        <button fxFlex="100" class="btn_primary" [routerLink]="['/reports', patientDetails?.patient_id]">View
+            Reports</button>
     </div>
 
     <div fxLayout="row" fxLayoutAlign="end center" class="new_report_button">
-        <button class="btn_primary" (click)="navigateToAddNewReports()">
+        <div class="btn_primary" [routerLink]="['/add-new-readings', patientDetails?.patient_id]">
             <mat-icon>add</mat-icon>
-        </button>
-        <span class="extentedBtn">New Reports</span>
+        </div>
+        <span class="extentedBtn" [routerLink]="['/add-new-readings', patientDetails?.patient_id]">Note New
+            Readings</span>
     </div>
 </section>

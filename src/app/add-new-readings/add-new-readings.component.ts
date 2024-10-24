@@ -4,13 +4,13 @@ import { SharedModule } from '../shared/shared.module';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-	selector: 'app-patient-details',
+	selector: 'app-add-new-readings',
 	standalone: true,
 	imports: [SharedModule, CommonModule],
-	templateUrl: './patient-details.component.html',
-	styleUrl: './patient-details.component.scss'
+	templateUrl: './add-new-readings.component.html',
+	styleUrl: './add-new-readings.component.scss'
 })
-export class PatientDetailsComponent implements OnInit {
+export class AddNewReadingsComponent implements OnInit {
 	patientId: any;
 	patientDetails: any;
 	patientsList: any = {
@@ -70,19 +70,12 @@ export class PatientDetailsComponent implements OnInit {
 			medications: 'Antibiotics	Amakacin, gentamycin, vancomycin Heart medicines	Amiodarone, digoxin, lidocaine, procainamide Anti-seizure medicines	Phenobarbital, phenytoin Medicines that treat autoimmune diseases	Cyclosporine, tacrolimus'
 		}
 	}
-
 	constructor(public router: Router, private route: ActivatedRoute) { }
-
-	navigateToReports() {
-		this.router.navigate(['/reports', this.patientId]);
-	}
-	navigateToAddNewReports() {
-		this.router.navigate(['/add-new-readings', this.patientId]);
-	}
-	ngOnInit(): void {
+	ngOnInit() {
 		this.patientId = this.route.snapshot.paramMap.get('patientId')
 		if (this.patientId) {
 			this.patientDetails = this.patientsList[this.patientId];
 		}
 	}
+
 }

@@ -70,14 +70,23 @@
             border-color: #de8628 !important;
             border-radius: 35px !important;
             width: 20%;
-            height: 65px !important;
+            height: 70px !important;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            mat-icon {
+                font-size: 40px;
+                height: 40px;
+                width: 40px;
+            }
         }
 
         .extentedBtn {
             background-color: #de8628 !important;
             color: white;
             padding: 10px;
-            margin-left: -10px;
+            margin-left: -15px;
             border-radius: 8px !important;
         }
 

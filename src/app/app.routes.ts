@@ -15,6 +15,14 @@ export const routes: Routes = [
         loadComponent: () => import('./patient-details/patient-details.component').then((x) => x.PatientDetailsComponent)
     },
     {
+        path: 'add-new-readings/:patientId',
+        loadComponent: () => import('./add-new-readings/add-new-readings.component').then((x) => x.AddNewReadingsComponent)
+    },
+    {
+        path: 'reports/:patientId',
+        loadComponent: () => import('./patient-reports/patient-reports.component').then((x) => x.PatientReportsComponent)
+    },
+    {
         path: '',
         component: LoginComponent
     }
